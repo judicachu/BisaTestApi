@@ -1,0 +1,152 @@
+{
+	"id": "83eb9b4f-ff4c-b107-9b94-cd5ce4447513",
+	"name": "BisaTest",
+	"description": "",
+	"order": [
+		"eb1c098b-50d9-78d2-190c-5eb25d7e0e18",
+		"e447b8ae-fb13-c56d-71b0-8f191652ed2a",
+		"c474211f-adc3-e0f8-be30-0a93a399282c",
+		"929791e2-b4cc-12dc-5d49-ff95fbfb9b7d",
+		"0053d80a-55e0-9afa-92ea-a8060c1b83a4"
+	],
+	"folders": [],
+	"folders_order": [],
+	"timestamp": 1661542454023,
+	"owner": "11934336",
+	"public": false,
+	"requests": [
+		{
+			"id": "0053d80a-55e0-9afa-92ea-a8060c1b83a4",
+			"headers": "",
+			"headerData": [],
+			"url": "http://localhost:8090/api/cuenta/consultar-saldo/2",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "83eb9b4f-ff4c-b107-9b94-cd5ce4447513",
+			"data": null,
+			"dataMode": "params",
+			"name": "Consultar Saldo",
+			"description": "Para consultar saldo de una cuenta",
+			"descriptionFormat": "html",
+			"time": 1661547026618,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		},
+		{
+			"id": "929791e2-b4cc-12dc-5d49-ff95fbfb9b7d",
+			"headers": "",
+			"headerData": [],
+			"url": "http://localhost:8090/api/cuenta/historico-transacciones/2",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "83eb9b4f-ff4c-b107-9b94-cd5ce4447513",
+			"data": null,
+			"dataMode": "params",
+			"name": "Ver Historico de Transacciones",
+			"description": "Para ver el historico de transacciones de una cuenta",
+			"descriptionFormat": "html",
+			"time": 1661547009035,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		},
+		{
+			"id": "c474211f-adc3-e0f8-be30-0a93a399282c",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "localhost:8090/api/cuenta/retirar-dinero",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1661546942108,
+			"name": "Retirar Dinero",
+			"description": "Método para retirar dinero",
+			"collectionId": "83eb9b4f-ff4c-b107-9b94-cd5ce4447513",
+			"responses": [],
+			"rawModeData": "{\n\t\"idCuenta\": 2,\n\t\"monto\":75,\n\t\"moneda\": \"BOL\"\n}"
+		},
+		{
+			"id": "e447b8ae-fb13-c56d-71b0-8f191652ed2a",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "localhost:8090/api/cuenta/depositar-dinero",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1661546926280,
+			"name": "Depositar Dinero",
+			"description": "Método para depositar Dinero ",
+			"collectionId": "83eb9b4f-ff4c-b107-9b94-cd5ce4447513",
+			"responses": [],
+			"rawModeData": "{\n\t\"idCuenta\": 2,\n\t\"monto\":600000,\n\t\"moneda\": \"BOL\"\n}"
+		},
+		{
+			"id": "eb1c098b-50d9-78d2-190c-5eb25d7e0e18",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "localhost:8090/api/cuenta/crear-cuenta",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1661546907762,
+			"name": "Crear Cuenta",
+			"description": "Permite Crear Cuenta con Saldo = 0 y estado = ACTIVE",
+			"collectionId": "83eb9b4f-ff4c-b107-9b94-cd5ce4447513",
+			"responses": [],
+			"rawModeData": "{\n\t\"numeroCuenta\" : 1000001,\n\t\"idPersona\": 2,\n\t\"codigoMoneda\": \"BOL\"\n\t\n}"
+		}
+	]
+}
