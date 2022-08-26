@@ -20,6 +20,7 @@ Para el proyecto instalar SpringTools, descomprimir la carpeta, crear un workspa
 Abrir el proyecto con el IDE mencionado, ejecutar con RUN As -> SpringBoot App
 
 **Postman para probar servicio REST**
+
 Se utiliza Postman como cliente para realizar las pruebas del servicio, adicionalmente en el proyecto se encuentra el json utilizado 
 en src/test/java en el paquete com.bo.bisatest el archivo: BisaTest.postman_collection.json
 ```
